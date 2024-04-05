@@ -1,0 +1,23 @@
+.header-wrapper{
+    background-size: cover;
+    background-position: top center;
+    margin-bottom: 2rem;
+    min-height: 400px;
+    height: 400px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 100%;
+}
+.wrapper-type-2{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 992px){
+.wrapper-type-2 {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}

@@ -1,0 +1,30 @@
+.topBar{
+    font-size: 0.8em;
+    background: #323232;
+    color: #fff;
+    padding-top: 0.52rem;
+    padding-bottom: 0.52rem;
+    z-index: 1050;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+@media screen and (max-width: 992px){
+.wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+.userbar{
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+.global-menu{
+    margin-right: 2rem;
+}
