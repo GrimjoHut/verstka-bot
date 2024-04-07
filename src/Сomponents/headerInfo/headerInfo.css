@@ -7,17 +7,114 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    background-color: aqua;
+    background-image: url('./../../Resources/Images/ProjectWalppaper.jpg');
     width: 100%;
 }
 .wrapper-type-2{
     max-width: 1280px;
     margin-left: auto;
     margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    width:100%;
 }
 @media screen and (max-width: 992px){
 .wrapper-type-2 {
     padding-left: 15px;
     padding-right: 15px;
 }
+}
+.page-header {
+    display: flex;
+    width: 100%;
+    color: #3B4255;
+    padding: 2rem 0 2rem 0;
+    align-items: center;
+}
+.page-header .logo a {
+    color: #fff;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    -webkit-hyphens: none;
+    hyphens: none;
+    text-decoration: none;
+}
+.LogoMuhi {
+    flex-shrink: 0;
+    width: 65px;
+    margin-right: 1rem;
+}
+.page-header .logo a .project-name div {
+    font-size: 0.875rem;
+    font-weight: 300;
+}
+.page-header .logo a .project-name {
+    font-size: 1.2rem;
+    flex-grow: 1;
+    line-height: 1.2;
+}
+.primary-menu{
+    margin-left: auto;
+    z-index: 2;
+    color: #fff;
+}
+.primary-menu nav{
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.page-header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.menu-item {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+}
+.page-header .menu-item:first-child {
+    margin-left: 0;
+}
+.page-header .menu-item {
+    margin-left: 2rem;
+}
+ul {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+}
+.page-header .menu-item > a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+}
+.menu-item > a::after {
+    background: crimson;
+    margin-top: 0.4rem;
+    width: 0;
+    height: 2px;
+    content:"";
+    display: block;
+    transition: width 0.3s;
+}
+.menu-item > a:hover::after{
+    background: crimson;
+    margin-top: 0.4rem;
+    width: 100%;
+    height: 2px;
+    content:"";
+    display: block;
+    transition: width 0.3s;
 }
