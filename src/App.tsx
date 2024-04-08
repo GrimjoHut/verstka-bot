@@ -1,18 +1,18 @@
-import './App.css'
-import Content from './Сomponents/Content/Content';
-import Header from './Сomponents/Header/Header'
-import HeaderList from './Сomponents/headerInfo/headerInfo';
-import Footer from './Сomponents/Footer/Footer';
+import "./App.css"
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom"
+import Page1 from "./Pages/MainPage/Page1"
 
-function App() {
-
+const App = () => {
   return (
-    <body>
-    <Header />
-    <HeaderList />
-    <Content />
-    <Footer />
-    </body>
+    <div className="App">
+      <Router>
+        <div className="pageContainer">
+          <Routes>
+            <Route path="MainPage/Page1" element={<Page1 />}></Route>
+          </Routes>
+        </div>
+      </Router>
+    </div>
   )
 }
 
