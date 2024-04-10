@@ -1,0 +1,46 @@
+.CarouselContainer {
+    position: relative;
+    width: 100%;
+    height: auto;
+    max-height: 640px;
+    /* Добавьте другие стили, если необходимо */
+}
+
+.PrevButton, .NextButton {
+    position: absolute;
+    bottom: 2%;
+    z-index: 1;
+    /* Добавьте другие стили, если необходимо */
+}
+
+.NextButton{
+   right: 45%;
+}
+.PrevButton{
+    left: 45%;
+ }
+ .CarouselCarousel {
+    max-height: 640px;
+    width: 100%;
+ }
+.CarouselCarousel img{
+    object-fit: cover;
+    max-height: 640px;
+    width: 100%;
+}
+.effect{
+   position: absolute;
+   height: 640px;
+    width: 100%;
+    z-index: 2;
+    pointer-events: none;
+    background-color: rgb(48, 40, 40);
+}
+.effect.active{
+   opacity: 1;
+   transition: opacity 0.8s;
+}
+.effect.inactive{
+   opacity: 0;
+   transition: opacity 0.8s;
+}

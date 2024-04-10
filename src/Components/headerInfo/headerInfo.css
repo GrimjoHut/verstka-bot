@@ -150,3 +150,6 @@ ul {
     display: flex;
     flex-direction: column;
 }
+.main-hello .text span{
+    font-size: 20px;
+}
