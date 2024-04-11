@@ -1,6 +1,7 @@
 import "./ContentStyle.css"
 import { ContentArr, ContentMock } from "../../Mock/ContentMock"
 import Carousel from "../Carousel/Carousel"
+import TxtPostCon from "../textContent/txtPostCon";
 
 
 function Content() {
@@ -14,10 +15,9 @@ function Content() {
 
   return (
     <div className="content-wrapper">
-        <div className="ContentPost">
-         <div className="ImageContainer">
+        <div className="contentPost">
           <Carousel CarouselArr={curArray1}/>
-          </div>          
+          <div className={curArray1?.Style}><TxtPostCon TxtPropArr={curArray1}/></div>
         </div>
     </div>
   )

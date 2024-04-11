@@ -9,7 +9,12 @@
 .contentPost{
  height: auto;
  max-height: 720px;
+ position: relative;
 }
-.ImageContainer{
-    height: auto;
+.rightText{
+    position: absolute;
+    height: 100%;
+    width: 35%;
+    top:0;
+    right:3%;
 }

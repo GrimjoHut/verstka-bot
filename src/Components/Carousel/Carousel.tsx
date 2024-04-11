@@ -1,6 +1,7 @@
 import "./Carousel.css";
-import { ContentArr, ContentMock } from "./../../Mock/ContentMock"
+import { ContentMock } from "./../../Mock/ContentMock"
 import { useEffect, useState } from "react";
+import txtPostCon from './../textContent/txtPostCon';
 
 interface CarouselProps {
     CarouselArr: ContentMock | undefined;
@@ -11,6 +12,7 @@ const Carousel: React.FC<CarouselProps> = ({ CarouselArr }) => {
     const [curEffectStyle, setCurEffectStyle] = useState<boolean>(false);
 
     const nextDelay = 820; // Задержка в миллисекундах (0.5 секунды)
+
 
     const NextBut = () => {
         if (CarouselArr && CarouselArr.Image) {
@@ -40,12 +42,12 @@ const Carousel: React.FC<CarouselProps> = ({ CarouselArr }) => {
 
     return (
         <div className="CarouselContainer">
-            <button className="PrevButton" onClick={delayedPreviousBut}>BLABLA</button>
+            <button className={`PrevButton ${CarouselArr?.Carousel ? 'active' : 'inactive'}`} onClick={delayedPreviousBut}>BLABLA</button>
             <div className={`effect ${curEffectStyle ? 'active' : 'inactive'}`}></div>
             <div className="CarouselCarousel">
                 <img src={CarouselArr?.Image[curImage]}></img>
             </div>
-            <button className="NextButton" onClick={delayedNextBut}>BLABLA</button>
+            <button className={`NextButton ${CarouselArr?.Carousel ? 'active' : 'inactive'}`} onClick={delayedNextBut}>BLABLA</button>
         </div>
     );
 }

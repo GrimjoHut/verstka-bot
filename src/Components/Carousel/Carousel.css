@@ -15,9 +15,13 @@
 
 .NextButton{
    right: 45%;
+
 }
 .PrevButton{
     left: 45%;
+ }
+ .PrevButton.inactive, .NextButton.inactive{
+   transform: scale(0);
  }
  .CarouselCarousel {
     max-height: 640px;
@@ -27,6 +31,7 @@
     object-fit: cover;
     max-height: 640px;
     width: 100%;
+    z-index: 1;
 }
 .effect{
    position: absolute;
@@ -42,5 +47,5 @@
 }
 .effect.inactive{
    opacity: 0;
-   transition: opacity 0.8s;
+   transition: opacity 1.2s;
 }
