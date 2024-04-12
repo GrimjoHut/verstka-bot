@@ -11,7 +11,8 @@ const TxtPostCon: React.FC<TxtPostProps> = ({ TxtPropArr }) => {
   return (
     <div className="txtCont" style={{ backgroundColor: TxtPropArr?.txtBackColor }}>
       <div className="txtContTxt">
-        <span>ffffffffffffffffffffffffffffffffffffff</span>
+        <span className="txtHeader">{TxtPropArr?.Header}</span>
+        <span className="txtContCont">{TxtPropArr?.text}</span>
       </div>
       <button className="BackButton rounded-button">
         <span className="left-semicircle"></span>

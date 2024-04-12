@@ -17,7 +17,7 @@ function Content() {
     <div className="content-wrapper">
         <div className="contentPost">
           <Carousel CarouselArr={curArray1}/>
-          <div className={curArray1?.Style}><TxtPostCon TxtPropArr={curArray1}/></div>
+          <div className={curArray1?.Style}><TxtPostCon TxtPropArr={curArray1}/>g</div>
         </div>
     </div>
   )
