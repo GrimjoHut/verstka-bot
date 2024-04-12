@@ -8,7 +8,7 @@ function Page1() {
 
 
   return (
-   <body>
+   <body className="PageBody">
     <Header />
     <HeaderList />
     <Content />

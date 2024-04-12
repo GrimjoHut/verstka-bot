@@ -8,3 +8,6 @@ body {
     margin: 0;
     overflow-x: hidden;
 }
+.PageBody{
+    background: linear-gradient(90deg,black, purple, black);
+}

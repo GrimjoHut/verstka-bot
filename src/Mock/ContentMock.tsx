@@ -9,6 +9,7 @@ export interface ContentMock {
     Hashtag: string,
     txtBackColor: string,
     fontFamily: string,
+    fontColor: string
 }
 
 export const ContentArr: ContentMock[] = [
@@ -22,6 +23,7 @@ export const ContentArr: ContentMock[] = [
         Hashtag: "",
         txtBackColor: "rgb(0, 0, 0)",
         fontFamily: "",
+        fontColor:"rgb(209, 200, 200)"
     },
 
 ]
