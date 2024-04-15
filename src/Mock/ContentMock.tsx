@@ -19,8 +19,8 @@ export const ContentArr: ContentMock[] = [
         text: 'gggggg gggg ggg g g ggggg ggggg gggggg ffffff fffff ffff fggg',
         Header: 'F',
         ID: 0,
-        Style: "rightText",
-        Hashtag: "",
+        Style: "noCarousel",
+        Hashtag: "fdfdfd",
         txtBackColor: "rgb(0, 0, 0)",
         fontFamily: "",
         fontColor:"rgb(209, 200, 200)"

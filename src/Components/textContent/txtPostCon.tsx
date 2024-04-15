@@ -12,12 +12,12 @@ const TxtPostCon: React.FC<TxtPostProps> = ({ TxtPropArr, OpacityCont }) => {
 
 
   return (
-    <div className={OpacityCont? "txtCont" : "txtContHidden"} style={{ backgroundColor: TxtPropArr?.txtBackColor }}>
+    <div className={`txtCont${TxtPropArr?.Style} ${OpacityCont ? "" : "Hidden"}`} style={{ backgroundColor: TxtPropArr?.txtBackColor }}>
       <div className="txtContTxt">
         <span className="txtHeader" style={{ color: TxtPropArr?.fontColor}}>{TxtPropArr?.Header}</span>
         <span className="txtContCont" style={{ color: TxtPropArr?.fontColor}}>{TxtPropArr?.text}</span>
       </div>
-      <div className="Hashtag">fdsfdsf</div>
+      <div className="Hashtag">{TxtPropArr?.Hashtag}</div>
     </div>
   )
 }

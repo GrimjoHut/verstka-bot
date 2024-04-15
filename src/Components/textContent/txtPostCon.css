@@ -1,21 +1,26 @@
-.txtCont, .txtContHidden{
+.txtContnoCarousel, .txtContrightText, .txtContleftText{
     height: 100%;
     width: 100%;
     z-index: 2;
     display: flex;
     align-items: center;
     flex-direction: column;
-    transition: transform  0.5s;
+    transition: transform  0.3s;
+    transform: translateX(0);
+    transform: translateY(0);
 }
-.txtCont{
-  transform: scale(1);
+.txtContnoCarousel.Hidden{
+  transform: translateY(-100%);
 }
-.txtContHidden{
-  transform: scale(0);
+.txtContrightText.Hidden{
+  transform: translateX(100%);
+}
+.txtContleftText.Hidden{
+  transform: translateX(-100%);
 }
 .txtContTxt{
     width: 80%;
-    height: 88%;
+    height: 86%;
 }
 .txtHeader{
   width: fit-content;
@@ -36,7 +41,7 @@
 .Hashtag{
     width: 90%;
     margin-left: 4%;
-    margin-top: 8%;
+    margin-top: 14%;
     font-size: 14px;
     color: aqua;
     align-self: self-start;

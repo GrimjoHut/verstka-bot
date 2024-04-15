@@ -42,10 +42,11 @@
     background-color: rgb(48, 40, 40);
 }
 .effect.active{
-   opacity: 1;
+   visibility: visible;
    transition: opacity 0.8s;
 }
 .effect.inactive{
    opacity: 0;
+   visibility: hidden;
    transition: opacity 1.2s;
 }

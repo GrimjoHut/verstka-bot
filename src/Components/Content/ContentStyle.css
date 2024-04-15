@@ -3,8 +3,9 @@
     width:100%;
     height: auto;
     display: block;
-    margin-left: auto;
     margin-right: auto;
+    margin-left: auto;
+    overflow: hidden;
 }
 .contentPost{
  height: auto;
@@ -12,17 +13,25 @@
  position: relative;
  z-index: 1;
 }
-.rightText{
+.rightText, .noCarousel, .leftText{
     position: absolute;
     height: 100%;
     width: 30%;
     top:0;
-    right:3%;
     z-index: 2;
+}
+.rightText{
+  right: 0%;
+}
+.leftText{
+  left: 0%;
+}
+.noCarousel{
+  right: 35%;
 }
 .BackButton{
     position: absolute;
-    bottom: 17%;
+    bottom: 13%;
     left: 43%;
     border-radius: 25%;
     height: 4.8889%;
@@ -34,11 +43,9 @@
     position: relative;
     display: inline-block;
     color: rgb(255, 255, 255);
-    font-size: 1.3vh;
-    border: none;
     border-radius: 1.85vh;
     overflow: hidden;
-    border: 0.185vh solid #9aa7b4;
+    border: 2px solid #9aa7b4;
   }
   
   .left-semicircle,
@@ -65,7 +72,7 @@
   .button-content {
     position: relative; 
     z-index: 1;
-    
+    font-size: 12px;
   }
   .BackButton:hover {
     background-color: rgba(0, 123, 255, 0.2); /* подсветка при наведении */

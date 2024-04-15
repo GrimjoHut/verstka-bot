@@ -26,7 +26,7 @@ function Content() {
           <div className={curArray1?.Style}><TxtPostCon OpacityCont={curTextOpacity} TxtPropArr={curArray1}/>
           <button className="BackButton rounded-button" onClick={ChangeOp}>
         <span className="left-semicircle"></span>
-        <span className="button-content">Hide</span>
+        <span className="button-content">{curTextOpacity? "Hide" : "Show"}</span>
         <span className="right-semicircle"></span>
       </button>
           </div>
