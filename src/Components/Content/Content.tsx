@@ -3,17 +3,19 @@ import { ContentArr, ContentMock } from "../../Mock/ContentMock"
 import Carousel from "../Carousel/Carousel"
 import TxtPostCon from "../textContent/txtPostCon";
 import { useState } from "react";
-
+import AufPhrase from "../aufPhrase/aufPhrase";
 
 function Content() {
   const [curTextOpacity, setCurTextOpacity] = useState<boolean>(true)
   const CurPageNumber = 1;
   const ArrStart = CurPageNumber*4-4
+  const curAufPhrase = CurPageNumber-1
 
   const ChangeOp = () => {
     setCurTextOpacity(!curTextOpacity)
   }
  
+  
   const curArray1: ContentMock | undefined = ContentArr.find(Content => Content.ID === ArrStart);
   const curArray2: ContentMock | undefined = ContentArr.find(Content => Content.ID === ArrStart+1);
   const curArray3: ContentMock | undefined = ContentArr.find(Content => Content.ID === ArrStart+2);
@@ -21,6 +23,9 @@ function Content() {
 
   return (
     <div className="content-wrapper">
+        <div className="aufPhrasePost">
+          <AufPhrase />
+        </div>
         <div className="contentPost">
           <Carousel CarouselArr={curArray1}/>
           <div className={curArray1?.Style}><TxtPostCon OpacityCont={curTextOpacity} TxtPropArr={curArray1}/>

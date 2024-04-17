@@ -9,5 +9,5 @@ body {
     overflow-x: hidden;
 }
 .PageBody{
-    background: linear-gradient(90deg,black, purple, black);
+    background: rgb(0, 0, 0);;
 }

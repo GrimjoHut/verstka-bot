@@ -7,6 +7,15 @@
     margin-left: auto;
     overflow: hidden;
 }
+.aufPhrasePost{
+  max-width: 1478px;
+  width: 100%;
+  background-color: aqua;
+  max-height: 70px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
 .contentPost{
  height: auto;
  max-height: 720px;
