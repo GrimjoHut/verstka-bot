@@ -1,7 +1,6 @@
 import "./Carousel.css";
 import { ContentMock } from "./../../Mock/ContentMock"
-import { useEffect, useState } from "react";
-import txtPostCon from './../textContent/txtPostCon';
+import {  useState } from "react";
 
 interface CarouselProps {
     CarouselArr: ContentMock | undefined;

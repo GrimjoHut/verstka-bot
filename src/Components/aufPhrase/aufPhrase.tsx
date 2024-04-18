@@ -1,5 +1,5 @@
-import React, { useState, useEffect, useRef } from 'react';
-import './aufPhrase.css';
+import React, { useState, useEffect, useRef } from "react";
+import "./aufPhrase.css";
 
 interface AufProps {
   AufText: string | undefined;
@@ -11,8 +11,8 @@ const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
   const aufPhraseRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
         setIsVisible(entry.isIntersecting);
       });
     });
@@ -27,17 +27,14 @@ const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
   }, []);
 
   return (
-    <div className={isVisible ? 'scroll' : 'noScroll'} ref={aufPhraseRef}>
+    <div
+      className={`${Direction} ${isVisible ? " scroll" : " noScroll"}`}
+      ref={aufPhraseRef}>
       {AufText}
     </div>
   );
-}
+};
 
 export default AufPhrase;
 
-
-
-  
-
-
-  //вверх, слева, вправо, opacity, вниз
+//вверх, слева, вправо, opacity, вниз
