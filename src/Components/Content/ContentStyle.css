@@ -29,6 +29,9 @@
     top:0;
     z-index: 2;
 }
+.noPost{
+  height: 0px;
+}
 .rightText{
   right: 0%;
 }
@@ -47,6 +50,9 @@
     width: 18.28125%;
     background-color: rgba(50, 60, 70, 0.2);
     opacity: 1;
+}
+.noButton{
+  visibility: hidden;
 }
 .rounded-button {
     position: relative;

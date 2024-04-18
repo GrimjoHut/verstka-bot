@@ -1,13 +1,43 @@
-import "./aufPhrase.css"
-import { AufArr, AufMock } from "../../Mock/AufMock"
+import React, { useState, useEffect, useRef } from 'react';
+import './aufPhrase.css';
 
-function AufPhrase() {
+interface AufProps {
+  AufText: string | undefined;
+  Direction: string;
+}
 
-    return (
-      <div>
-      </div>
-    )
-  }
+const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
+  const [isVisible, setIsVisible] = useState(false);
+  const aufPhraseRef = useRef<HTMLDivElement | null>(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        setIsVisible(entry.isIntersecting);
+      });
+    });
+
+    if (aufPhraseRef.current) {
+      observer.observe(aufPhraseRef.current);
+    }
+
+    return () => {
+      observer.disconnect();
+    };
+  }, []);
+
+  return (
+    <div className={isVisible ? 'scroll' : 'noScroll'} ref={aufPhraseRef}>
+      {AufText}
+    </div>
+  );
+}
+
+export default AufPhrase;
+
+
+
   
-  export default AufPhrase
-  
+
+
+  //вверх, слева, вправо, opacity, вниз
