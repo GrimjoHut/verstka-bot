@@ -58,6 +58,37 @@ function Content() {
       </button>
           </div>
         </div>
+        <div className="aufPhrasePost">
+          <AufPhrase Direction="Right" AufText={curAuf?.Auf2}/>
+        </div>
+        <div className="aufPhrasePost">
+          <AufPhrase Direction="Scale" AufText={curAuf?.Auf2}/>
+        </div>
+        <div className={curArray3?.Empty? "noPost" : "contentPost"}>
+          <Carousel CarouselArr={curArray3}/>
+          <div className={curArray3?.Style}><TxtPostCon OpacityCont={curText3Opacity} TxtPropArr={curArray3}/>
+          <button className={curArray3?.textIncluded? "BackButton rounded-button" : "noButton"} 
+          onClick={ChangeOp(setCurText3Opacity)}>
+        <span className="left-semicircle"></span>
+        <span className="button-content">{curText3Opacity? "Hide" : "Show"}</span>
+        <span className="right-semicircle"></span>
+      </button>
+          </div>
+        </div>
+        <div className="aufPhrasePost">
+          <AufPhrase Direction="Down" AufText={curAuf?.Auf4}/>
+        </div>
+        <div className={curArray4?.Empty? "noPost" : "contentPost"}>
+          <Carousel CarouselArr={curArray4}/>
+          <div className={curArray4?.Style}><TxtPostCon OpacityCont={curText4Opacity} TxtPropArr={curArray4}/>
+          <button className={curArray4?.textIncluded? "BackButton rounded-button" : "noButton"} 
+          onClick={ChangeOp(setCurText4Opacity)}>
+        <span className="left-semicircle"></span>
+        <span className="button-content">{curText4Opacity? "Hide" : "Show"}</span>
+        <span className="right-semicircle"></span>
+      </button>
+          </div>
+        </div>
     </div>
   )
 }

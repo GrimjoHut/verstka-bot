@@ -26,7 +26,7 @@ const TestPage = () => {
   return (
     <div>
       <div className='BigBody'></div>
-    <div className={isVisible ? 'scroll' : 'noScroll'} ref={aufPhraseRef}>
+    <div className={isVisible ? 'scroll2' : 'noScroll2'} ref={aufPhraseRef}>
       fdsfdsfdsfsdfdsfdsfdsfdsfdsfdsfdsf
     </div>
     </div>

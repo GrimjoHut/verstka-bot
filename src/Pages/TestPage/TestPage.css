@@ -1,17 +1,17 @@
-.BigBody{
+.BigBody2{
     width: 100vw;
     height: 150vh;
     background-color: black;
 }
-.scroll, .noScroll{
+.scroll2, .noScroll2{
     height: 100vh;
     width: 100vw;
     transition: background-color 0.5s;
     transition-delay: 2s;
 }
-.scroll{
+.scroll2{
     background-color: blue;
 }
-.noScroll{
+.noScroll2{
     background-color: brown;
 }

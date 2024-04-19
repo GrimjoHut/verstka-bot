@@ -11,8 +11,8 @@ const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
   const aufPhraseRef = useRef<HTMLDivElement | null>(null);
 
   useEffect(() => {
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
         setIsVisible(entry.isIntersecting);
       });
     });
@@ -22,15 +22,17 @@ const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
     }
 
     return () => {
-      observer.disconnect();
+      if (aufPhraseRef.current) {
+        observer.unobserve(aufPhraseRef.current);
+      }
     };
   }, []);
 
   return (
-    <div
-      className={`${Direction} ${isVisible ? " scroll" : " noScroll"}`}
-      ref={aufPhraseRef}>
+    <div className="aufContainer" ref={aufPhraseRef}>
+     <div className={`${Direction} ${isVisible ? " scroll" : " noScroll"}`}>
       {AufText}
+      </div>
     </div>
   );
 };
