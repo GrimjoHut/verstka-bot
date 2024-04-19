@@ -1,5 +1,5 @@
 .content-wrapper{
-    max-width: 1478.4px;
+    max-width: 93.75vw;
     width:100%;
     height: auto;
     display: block;
@@ -8,7 +8,6 @@
     overflow: hidden;
 }
 .aufPhrasePost{
-  max-width: 1478px;
   width: 100%;
   background-color: rgb(0, 0, 0);
   max-height: 70px;
@@ -17,14 +16,25 @@
   margin-right: auto;
 }
 .contentPost{
+ overflow: hidden;
  height: auto;
  max-height: 720px;
  position: relative;
  z-index: 1;
+ border: 3px solid rgb(27, 17, 27);
+}
+.Filler{
+  height: 850px;
+  width: 93.75vw;
+  background-color: aliceblue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .rightText, .noCarousel, .leftText{
     position: absolute;
     height: 100%;
+    max-width: 443.52px;
     width: 30%;
     top:0;
     z-index: 2;

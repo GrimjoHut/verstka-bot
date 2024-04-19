@@ -28,10 +28,9 @@
 .Right.noScroll{
     transform: translate(200%, 0);
   }
-.Scale.noScroll{
+.Opacity.noScroll{
     opacity: 0;
 }
 .Down.noScroll{
     transform: translate(0, 200%);
 }
-

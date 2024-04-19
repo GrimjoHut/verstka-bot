@@ -43,7 +43,34 @@ export const ContentArr: ContentMock[] = [
         fontFamily: "",
         fontColor:"rgb(209, 200, 200)"
     },
-    
+    {
+        Image: [],
+        Carousel: false,
+        textIncluded: false,
+        Empty: true,
+        text: '',
+        Header: '',
+        ID: 2,
+        Style: "",
+        Hashtag: "",
+        txtBackColor: "rgb(0, 0, 0)",
+        fontFamily: "",
+        fontColor:"rgb(209, 200, 200)"
+    },
+    {
+        Image: [],
+        Carousel: false,
+        textIncluded: false,
+        Empty: true,
+        text: '',
+        Header: '',
+        ID: 3,
+        Style: "",
+        Hashtag: "",
+        txtBackColor: "rgb(0, 0, 0)",
+        fontFamily: "",
+        fontColor:"rgb(209, 200, 200)"
+    },
 
 ]
 

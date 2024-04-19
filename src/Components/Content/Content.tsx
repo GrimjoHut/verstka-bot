@@ -5,16 +5,22 @@ import TxtPostCon from "../textContent/txtPostCon";
 import { useState } from "react";
 import AufPhrase from "../aufPhrase/aufPhrase";
 import { AufArr, AufMock } from "../../Mock/AufMock";
+import Filler from "../Filler/Filler";
 
-function Content() {
+interface ContentProps{
+curPageNumber: number
+}
+
+
+const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
+
   type StateFunction = React.Dispatch<React.SetStateAction<boolean>>;
   const [curText1Opacity, setCurText1Opacity] = useState<boolean>(true)
   const [curText2Opacity, setCurText2Opacity] = useState<boolean>(true)
   const [curText3Opacity, setCurText3Opacity] = useState<boolean>(true)
   const [curText4Opacity, setCurText4Opacity] = useState<boolean>(true)
-  const CurPageNumber = 1;
-  const ArrStart = CurPageNumber*4-4
-  const curAufNumb = CurPageNumber-1
+  const ArrStart = curPageNumber*4-4
+  const curAufNumb = curPageNumber-1
 
   const ChangeOp = (a: StateFunction) => {
     return () => {
@@ -59,10 +65,11 @@ function Content() {
           </div>
         </div>
         <div className="aufPhrasePost">
-          <AufPhrase Direction="Right" AufText={curAuf?.Auf2}/>
+          <AufPhrase Direction="Opacity" AufText={curAuf?.Auf3}/>
         </div>
+        <div className="Filler"><Filler /></div>
         <div className="aufPhrasePost">
-          <AufPhrase Direction="Scale" AufText={curAuf?.Auf2}/>
+          <AufPhrase Direction="Opacity" AufText={curAuf?.Auf4}/>
         </div>
         <div className={curArray3?.Empty? "noPost" : "contentPost"}>
           <Carousel CarouselArr={curArray3}/>
@@ -76,7 +83,7 @@ function Content() {
           </div>
         </div>
         <div className="aufPhrasePost">
-          <AufPhrase Direction="Down" AufText={curAuf?.Auf4}/>
+          <AufPhrase Direction="Right" AufText={curAuf?.Auf5}/>
         </div>
         <div className={curArray4?.Empty? "noPost" : "contentPost"}>
           <Carousel CarouselArr={curArray4}/>
@@ -88,6 +95,9 @@ function Content() {
         <span className="right-semicircle"></span>
       </button>
           </div>
+        </div>
+        <div className="aufPhrasePost">
+          <AufPhrase Direction="Down" AufText={curAuf?.Auf6}/>
         </div>
     </div>
   )
