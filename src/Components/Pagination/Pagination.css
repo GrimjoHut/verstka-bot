@@ -1,21 +1,36 @@
 .paginationContainer{
-    background-color: aqua;
     width: 100%;
     display: flex;
-    justify-content: space-around;
     align-items: center;
+    justify-content: center;
     margin-top: 2rem;
     margin-bottom: 2rem;
+    gap: 0.5rem;
 }
-.prevNumbs, .curNumbs, .nextNumbs{
-    background-color: brown;
-    display: flex;
-    font-size: 20px;
-    justify-content: space-around;
-    width: 20%;
-}
-.Nnumb, .Nnumb1, .Nnumb2, .Nnumb0, .Pnumb, .Pnumb0, .Pnumb1, .Pnumb2{
+.paginationContainer li{
     display: block;
-    color: blue;
-    margin: auto;
+    min-width: 2rem;
+    font-size: 1.8rem;
+    text-align: center;
+    color: white;
+    border: 2px solid rgb(155, 117, 117);
+    border-radius: 15%;
+}
+.paginationContainer li:hover{
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.Nnumb0.short, .Pnumb0.short, .Nnumb0.mid, .Pnumb0.mid, .Nnumb0.long, .Pnumb0.long,
+.Nnumb1.mid, .Pnumb1.mid, .Nnumb1.long, .Pnumb1.long,
+.Nnumb2.long, .Pnumb2.long{
+    visibility: hidden;
+}
+.paginationContainer li a {
+    color: white;
+    text-decoration: none; /* Удаление подчеркивания */
+}
+.paginationContainer li a:hover {
+    color: black;
+    
 }

@@ -14,7 +14,7 @@ const Pagination: React.FC<PaginationProps> = ({ pageNumb }) => {
     //  const MaxCalc = Math.floor(ContentArr.length / 4) - pageNumb; //
     //  const MinCalc = pageNumb - 1; //
 
-    const MaxCalc = 6 - pageNumb;
+    const MaxCalc = 3 - pageNumb;
     const MinCalc = pageNumb - 1;
 
     useEffect(() => {
@@ -52,15 +52,21 @@ const Pagination: React.FC<PaginationProps> = ({ pageNumb }) => {
     }, [pageNumb]);
 
     return (
-        <div className="paginationContainer">
-            <li className={`${curPrev} long`}>1</li>
-            <li className={`${curPrev} mid`}>{pageNumb - 2 == 0 ? `${pageNumb - 2}` : `...`}</li>
-            <li className={`${curPrev} short`}>{pageNumb - 1}</li>
-            <li className="curNumbs">{pageNumb}</li>
-            <li className={`${curNext} short`}>{pageNumb + 1}</li>
-            <li className={`${curNext} mid`}>{6 - pageNumb == 2 ? `${pageNumb + 2}` : `...`}</li>
-            <li className={`${curNext} long`}>6</li>
-        </div>
+        <ul className="paginationContainer">
+            <li className={`${curPrev} long`}><Link to={`/page/1`}>1</Link></li>
+            {pageNumb - 2 === 2 ? 
+    <li className={`${curPrev} mid`}> <Link to={`/page/${pageNumb-2}`}>{pageNumb - 2}</Link> </li> :
+    <li className={`${curPrev} mid`}>...</li>
+}
+            <li className={`${curPrev} short`}><Link to={`/page/${pageNumb-1}`}>{pageNumb-1}</Link></li>
+            <li style={{backgroundColor:"rgb(255, 255, 255)", color:"rgb(0, 0, 0)"}}>{pageNumb}</li>
+            <li className={`${curNext} short`}><Link to={`/page/${pageNumb+1}`}>{pageNumb+1}</Link></li>
+            {3 - pageNumb === 2 ? 
+    <li className={`${curNext} mid`}> <Link to={`/page/${pageNumb+2}`}>{pageNumb + 2}</Link> </li> :
+    <li className={`${curNext} mid`}>...</li>
+            }
+            <li className={`${curNext} long`}><Link to={`/page/3`}>3</Link></li>
+        </ul>
     );
 };
 
