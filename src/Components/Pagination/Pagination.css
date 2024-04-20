@@ -1,0 +1,21 @@
+.paginationContainer{
+    background-color: aqua;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.prevNumbs, .curNumbs, .nextNumbs{
+    background-color: brown;
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    width: 20%;
+}
+.Nnumb, .Nnumb1, .Nnumb2, .Nnumb0, .Pnumb, .Pnumb0, .Pnumb1, .Pnumb2{
+    display: block;
+    color: blue;
+    margin: auto;
+}

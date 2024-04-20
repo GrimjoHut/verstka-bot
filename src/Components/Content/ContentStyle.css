@@ -24,7 +24,7 @@
  border: 3px solid rgb(27, 17, 27);
 }
 .Filler{
-  height: 850px;
+  height: 78vh;
   width: 93.75vw;
   background-color: aliceblue;
   display: flex;

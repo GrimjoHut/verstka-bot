@@ -11,3 +11,8 @@ body {
 .PageBody{
     background: rgb(0, 0, 0);;
 }
+.Pagination{
+    margin-right: auto;
+    margin-left: auto;
+    width: 50%;
+}
