@@ -4,7 +4,6 @@ import Footer from "../../Components/Footer/Footer"
 import Header from "../../Components/Header/Header"
 import HeaderList from "../../Components/headerInfo/headerInfo"
 import "./Page.css"
-import Pagination from "../../Components/Pagination/Pagination"
 
 interface Page1Props {}
 
@@ -17,7 +16,6 @@ const Page1: React.FC<Page1Props> = () => {
       <Header />
       <HeaderList />
       <Content curPageNumber={parsedPageNumber}/>
-      <div className="Pagination"><Pagination pageNumb={parsedPageNumber}/></div>
       <Footer />
     </body>
   )

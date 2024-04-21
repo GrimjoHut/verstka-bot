@@ -2,7 +2,7 @@
     position: relative;
     width: 100%;
     height: auto;
-    max-height: 640px;
+    max-height: 78vh;
     /* Добавьте другие стили, если необходимо */
 }
 
@@ -24,18 +24,18 @@
    transform: scale(0);
  }
  .CarouselCarousel {
-    max-height: 640px;
+    max-height: 78vh;
     width: 100%;
  }
 .CarouselCarousel img{
     object-fit: cover;
-    max-height: 640px;
+    max-height: 78vh;
     width: 100%;
     z-index: 1;   
 }
 .effect{
    position: absolute;
-   height: 640px;
+   height: 78vh;
     width: 100%;
     z-index: 2;
     pointer-events: none;

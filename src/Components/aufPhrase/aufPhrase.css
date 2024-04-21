@@ -1,13 +1,14 @@
 .aufContainer{
-    width: 50%;
+    width: 100%;
+    height: 100%;
     text-align: center;
     height: auto;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 20px;
     font-size: 25px;
-    padding-bottom: 25px;
-    overflow: hidden;
+    overflow: hidden;  
+}
+.aufContainer p{
+    text-shadow:  3px 3px 6px rgba(0, 0, 0, 0.3), /* светлая тень справа и внизу */
+    -3px -3px 6px rgba(255, 255, 255, 0.7); /* темная тень слева и сверху */
 }
 .noScroll{
     transition: transform 0.5s;

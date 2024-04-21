@@ -31,7 +31,7 @@ const AufPhrase: React.FC<AufProps> = ({ AufText, Direction }) => {
   return (
     <div className="aufContainer" ref={aufPhraseRef}>
      <div className={`${Direction} ${isVisible ? " scroll" : " noScroll"}`}>
-      {AufText}
+      <p>{AufText}</p>
       </div>
     </div>
   );

@@ -35,7 +35,7 @@
     display: flex;
     height: 85%;
     flex-wrap: wrap;
-    font-size: 90px;
+    font-size: 20px;
     word-break: keep-all;
     overflow-y: auto;
     line-height: 2;

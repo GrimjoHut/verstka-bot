@@ -12,7 +12,22 @@ body {
     background: rgb(0, 0, 0);;
 }
 .Pagination{
+    margin-left: 36.375%;
     margin-right: auto;
-    margin-left: auto;
     width: 20%;
 }
+/* Для полосы прокрутки */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина полосы прокрутки */
+  }
+  
+  /* Для видимой области полосы прокрутки */
+  ::-webkit-scrollbar-thumb {
+    background-color: #413333; /* Цвет полосы прокрутки */
+    border-radius: 6px; /* Радиус скругления углов */
+  }
+  
+  /* Для фона полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background-color: black; /* Цвет фона полосы прокрутки */
+  }

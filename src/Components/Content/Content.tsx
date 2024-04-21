@@ -6,6 +6,7 @@ import { useState } from "react";
 import AufPhrase from "../aufPhrase/aufPhrase";
 import { AufArr, AufMock } from "../../Mock/AufMock";
 import Filler from "../Filler/Filler";
+import Pagination from "../Pagination/Pagination";
 
 interface ContentProps{
 curPageNumber: number
@@ -36,7 +37,7 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
 
   return (
     <div className="content-wrapper">
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf1">
           <AufPhrase Direction="Up" AufText={curAuf?.Auf1}/>
         </div>
         <div className="contentPost">
@@ -50,7 +51,7 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
       </button>
           </div>
         </div>
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf2">
           <AufPhrase Direction="Left" AufText={curAuf?.Auf2}/>
         </div>
         <div className={curArray2?.Empty? "noPost" : "contentPost"}>
@@ -64,11 +65,11 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
       </button>
           </div>
         </div>
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf3">
           <AufPhrase Direction="Opacity" AufText={curAuf?.Auf3}/>
         </div>
         <div className="Filler"><Filler JokeNumber={curPageNumber-1}/></div>
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf4">
           <AufPhrase Direction="Opacity" AufText={curAuf?.Auf4}/>
         </div>
         <div className={curArray3?.Empty? "noPost" : "contentPost"}>
@@ -82,7 +83,7 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
       </button>
           </div>
         </div>
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf5">
           <AufPhrase Direction="Right" AufText={curAuf?.Auf5}/>
         </div>
         <div className={curArray4?.Empty? "noPost" : "contentPost"}>
@@ -96,9 +97,10 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
       </button>
           </div>
         </div>
-        <div className="aufPhrasePost">
+        <div className="aufPhrasePost" id="Auf6">
           <AufPhrase Direction="Down" AufText={curAuf?.Auf6}/>
         </div>
+        <div className="Pagination"><Pagination pageNumb={curPageNumber}/></div>
     </div>
   )
 }
