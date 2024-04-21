@@ -1,6 +1,38 @@
-.Alert{
-   text-align: center;
-   font-size: 120px;
-   color: red;
-   font-style: italic;
+.JokeFiller img{
+   height: 100%;
+   width: 100%;
+   object-fit: cover;
+}
+.JokeFiller{
+   height: 100%;
+   width: 100%;
+   position: relative;   
+}
+.FirstOpener{
+   position: absolute;
+   left: 46%;
+   top: 50%;
+   z-index: 3;
+}
+.CircusContent{
+   position: absolute;
+   top:35%;
+   left: 30%;
+   height: 40%;
+   background-color: brown;
+   width: 40%;
+}
+.CircusTxt{
+ width: 100%;
+ height: 100%;
+ position: absolute;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.SecondOpener{
+
+}
+.CircusTxtAnswer{
+
 }

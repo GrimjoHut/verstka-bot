@@ -67,7 +67,7 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
         <div className="aufPhrasePost">
           <AufPhrase Direction="Opacity" AufText={curAuf?.Auf3}/>
         </div>
-        <div className="Filler"><Filler /></div>
+        <div className="Filler"><Filler JokeNumber={curPageNumber-1}/></div>
         <div className="aufPhrasePost">
           <AufPhrase Direction="Opacity" AufText={curAuf?.Auf4}/>
         </div>
