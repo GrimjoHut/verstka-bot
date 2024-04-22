@@ -7,32 +7,61 @@
    height: 100%;
    width: 100%;
    position: relative;   
+   overflow: hidden;
 }
 .FirstOpener{
    position: absolute;
-   left: 46%;
-   top: 50%;
-   z-index: 3;
+   z-index: 2;
+   font-size: 90px;
+   background-color: transparent;
+   border: 0px;
+   cursor: pointer;
 }
 .CircusContent{
+   display: flex;
+   justify-content: center;
+   align-items: center;
    position: absolute;
-   top:35%;
-   left: 30%;
-   height: 40%;
-   background-color: brown;
-   width: 40%;
+   display: flex;
+   top:0%;
+   width: 100%;
+   height: 100%;
 }
 .CircusTxt{
- width: 100%;
- height: 100%;
+ width: 50%;
+ height: 20%;
  position: absolute;
  display: flex;
  justify-content: center;
- align-items: center;
+ top: 45%;
+ font-size: 2rem;
+ color: rgb(0, 255, 157);
+ word-break: keep-all;
+ font-family: "Caveat";
 }
 .SecondOpener{
-
+position: absolute;
+ z-index: 3;
+ bottom: 35%;
+ border: 0px;
+ background-color: transparent;
+ cursor: pointer;
+ font-size: 32px;
 }
 .CircusTxtAnswer{
-
+position: absolute;
+z-index: 3;
+bottom: 35%;
+font-size: 2rem;
+color: yellow;
+font-family: "Caveat";
+}
+.Defused{
+   opacity: 0 !important;
+   transition: opacity 0.5s;
+   pointer-events: none;
+}
+.notDefused{
+  opacity: 1;
+  transition: opacity 0.5s;
 }

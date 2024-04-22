@@ -6,8 +6,8 @@ export interface JokeMock {
  }
  
  export const JokeArr: JokeMock[] = [
-     {   questTxt: "Что?",
-         answerTxt: "Ничего",
+     {   questTxt: "Кто был против истечения газа из сопла?",
+         answerTxt: "Лавальный!",
          ID: 0
      },
  
