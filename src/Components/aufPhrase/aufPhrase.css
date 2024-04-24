@@ -3,7 +3,7 @@
     height: 100%;
     text-align: center;
     height: auto;
-    font-size: 25px;
+    font-size: 30px;
     overflow: hidden;  
 }
 .aufContainer p{
@@ -19,6 +19,7 @@
     transition-delay: 1s;
     color: aliceblue;
     opacity: 1;
+    font-family: "Lombardina-One";
 }
 .Up.noScroll{
   transform: translate(0, -200%);
@@ -35,3 +36,8 @@
 .Down.noScroll{
     transform: translate(0, 200%);
 }
+@font-face {
+    font-family:"Lombardina-One";
+    src: url("./../../Resources/Fonts/LombardinaOne.ttf") format('truetype');
+  }
+  

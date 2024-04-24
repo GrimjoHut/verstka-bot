@@ -31,3 +31,7 @@ body {
   ::-webkit-scrollbar-track {
     background-color: black; /* Цвет фона полосы прокрутки */
   }
+  @font-face {
+    font-family:"Lombardina-One";
+    src: url("./../../Resources/Fonts/LombardinaOne.ttf") format('truetype');
+  }
