@@ -1,0 +1,23 @@
+
+body {
+    display: block;
+    width: 100vw;
+    height: auto;
+    margin: 0;
+    overflow-x: hidden;
+}
+/* Для полосы прокрутки */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина полосы прокрутки */
+  }
+  
+  /* Для видимой области полосы прокрутки */
+  ::-webkit-scrollbar-thumb {
+    background-color: #413333; /* Цвет полосы прокрутки */
+    border-radius: 6px; /* Радиус скругления углов */
+  }
+  
+  /* Для фона полосы прокрутки */
+  ::-webkit-scrollbar-track {
+    background-color: black; /* Цвет фона полосы прокрутки */
+  }

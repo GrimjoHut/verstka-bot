@@ -1,0 +1,50 @@
+.ExHeaderContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-image: url("./../../Resources/Images/SitePhon3.0.jpg");          
+}
+.ExHeaderHeader{
+    width: calc((14/16)*100%);
+    height: calc((1/6)*100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: calc((5/9)*100vh);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.ExHeaderHeader button{
+    background-color: transparent;
+    color: white;
+    border: 0px;
+}
+.ExHeaderHeader span{
+    font-size: 50px;
+    color: white;
+}
+.ExHeaderFooter{
+    width: calc((14/16)*100%);
+    height: calc((2/9)*100%);
+    background-color: brown;
+    margin-left: auto;
+    margin-right: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.ExHeaderFooter span{
+    font-size: 1.2rem;
+    width: 90%;
+}
+.ExHeaderFooter p{
+    text-align: end;
+}
+.ExHeaderFooter button{
+    margin-top: 20px;
+    background-color: transparent;
+    border: 1px solid blue;
+    border-radius: 50%;
+}
