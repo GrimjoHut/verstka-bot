@@ -4,6 +4,7 @@ function ExHeader() {
 
     return (
         <div className="ExHeaderContainer">
+            <div className="GradientEffect"></div>
             <div className="ExHeaderHeader">
             <button>FDFD</button>
             <span>Novikov Place</span>
