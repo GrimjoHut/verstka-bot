@@ -1,4 +1,4 @@
-import ExHeader from "../../Components/ExecutionComponents/ExHeader"
+import ExHeader from "../../Components/ExecutionComponents/ExHeader/ExHeader"
 import "./Execution.css"
 
 function Execution() {

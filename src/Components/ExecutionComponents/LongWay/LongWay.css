@@ -1,0 +1,13 @@
+.LongWayContainer{
+    width: 100%;
+    height: 100vh;
+}
+.LongWayContainer.Dirt{
+background-image: url("./../../../Resources/Images/PhonZemlya.jpg");
+}
+.LongWayContainer.Half{
+
+}
+.LongWayContainerHell{
+
+}
