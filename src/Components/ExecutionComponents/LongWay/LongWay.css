@@ -1,6 +1,10 @@
 .LongWayContainer{
     width: 100%;
-    height: 100vh;
+    height: 1000vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
 }
 .LongWayContainer.Dirt{
 background-image: url("./../../../Resources/Images/PhonZemlya.jpg");
@@ -10,4 +14,8 @@ background-image: url("./../../../Resources/Images/PhonZemlya.jpg");
 }
 .LongWayContainerHell{
 
+}
+span {
+    color: red;
+    font-size: 400px;
 }

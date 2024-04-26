@@ -26,7 +26,10 @@ const LongWay: React.FC<LongWayProps> = ({ TextNumber, NowayNumber, BackStyle })
   return (
     <div className={`LongWayContainer ${BackStyle}`}>
       <span>{curNoWay}</span>
-      <button></button>
+      <span>{curNoWay}</span>
+      <span>{curNoWay}</span>
     </div>
   );
 };
+
+export default LongWay

@@ -64,6 +64,7 @@
     border: 1px solid blue;
     border-radius: 50%;
     color: white;
+    cursor: pointer;
 }
 @font-face {
     font-family: "Carmen";
