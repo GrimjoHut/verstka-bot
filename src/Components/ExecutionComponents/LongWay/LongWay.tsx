@@ -1,12 +1,12 @@
 import "./LongWay.css";
 
 interface LongWayProps {
-  TextNumber: number;
   NowayNumber: number;
   BackStyle: string;
 }
 
-const LongWay: React.FC<LongWayProps> = ({ TextNumber, NowayNumber, BackStyle }) => {
+const LongWay: React.FC<LongWayProps> = ({  NowayNumber, BackStyle }) => {
+  
   const NoWayTxtArr = [
     "АбуАбу",
     "fdfdf",
@@ -17,17 +17,29 @@ const LongWay: React.FC<LongWayProps> = ({ TextNumber, NowayNumber, BackStyle })
     "fdfdfd",
     "Fdfdfdsf",
     "АбуАбу",
-    "fdfdf",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
+    "",
   ];
 
-  const ArrIndex = NowayNumber + TextNumber * 3;
-  const curNoWay = NoWayTxtArr[ArrIndex];
 
   return (
     <div className={`LongWayContainer ${BackStyle}`}>
-      <span>{curNoWay}</span>
-      <span>{curNoWay}</span>
-      <span>{curNoWay}</span>
+     <div className="PhraseContainer">
+      <span>{NoWayTxtArr[17-9-NowayNumber*3]}</span>
+     </div>
+     <div className="PhraseContainer">
+      <span>{NoWayTxtArr[17-9-NowayNumber*3-1]}</span>
+     </div>
+     <div className="PhraseContainer">
+      <span>{NoWayTxtArr[17-9-NowayNumber*3-2]}</span>
+     </div>
     </div>
   );
 };
