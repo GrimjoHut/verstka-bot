@@ -1,4 +1,4 @@
-import { useState } from "react";
+
 import { ContentMock } from "../../Mock/ContentMock";
 import "./txtPostCon.css"
 

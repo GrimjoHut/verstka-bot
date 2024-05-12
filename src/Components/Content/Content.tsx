@@ -58,7 +58,7 @@ const Content: React.FC<ContentProps> = ({ curPageNumber }) => {
           <Carousel CarouselArr={curArray2}/>
           <div className={curArray2?.Style}><TxtPostCon OpacityCont={curText2Opacity} TxtPropArr={curArray2}/>
           <button className={curArray2?.textIncluded? "BackButton rounded-button" : "noButton"} 
-          onClick={ChangeOp(setCurText1Opacity)}>
+          onClick={ChangeOp(setCurText2Opacity)}>
         <span className="left-semicircle"></span>
         <span className="button-content">{curText2Opacity? "Hide" : "Show"}</span>
         <span className="right-semicircle"></span>
