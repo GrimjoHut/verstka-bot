@@ -2,6 +2,7 @@ import { useState } from "react"
 import ExHeader from "../../Components/ExecutionComponents/ExHeader/ExHeader"
 import LongWay from "../../Components/ExecutionComponents/LongWay/LongWay"
 import "./Execution.css"
+import StopPoint from "../../Components/ExecutionComponents/StopPoint/StopPoint"
 
 function Execution() {
 
@@ -18,8 +19,9 @@ function Execution() {
         <body>
             <div className="ContainerBut"><ExHeader /><button onClick={DownButton} className="ButtonRoll">FD</button></div>
             <LongWay FillerNumb={FillerNumb} BackStyle="Dirt" NowayNumber={0}/>
-            <div style={{backgroundColor: "rgb(0, 0, 0)", height: "100vh"}}>{FillerNumb}</div>
+            <StopPoint />
             <LongWay FillerNumb={FillerNumb}BackStyle="Half" NowayNumber={1}/>
+            <StopPoint />
             <LongWay FillerNumb={FillerNumb} BackStyle="Hell" NowayNumber={2}/>
         </body>
     )
