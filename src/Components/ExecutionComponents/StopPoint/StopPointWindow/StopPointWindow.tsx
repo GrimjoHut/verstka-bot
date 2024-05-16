@@ -10,21 +10,21 @@ export interface IStopPointWindowProps {
 const StopPointWindow: React.FC<IStopPointWindowProps> = ({ mainWindow, setMainWindow, curWindowNumber }) => {
 
 
-    const [curWindowMod, setCurWindowMod] = useState<string>("windowClosed")
+    const [curWindowMod, setCurWindowMod] = useState<string>("Closed")
 
     const modChange = () => {
-        if (curWindowMod === "windowClosed"){ 
-            setCurWindowMod("windowOpened")
+        if (curWindowMod === "Closed"){ 
+            setCurWindowMod("Opened")
             setMainWindow(curWindowNumber)
         }
-        if (curWindowMod === "windowOpened") {
-            setCurWindowMod("windowClosed")
+        if (curWindowMod === "Opened") {
+            setCurWindowMod("Closed")
             setMainWindow(0)
         }
     }
 
     return (
-        <div className={curWindowMod}>
+        <div className={`stopWindow ${curWindowMod}`}>
             <button className="buttonWindow" onClick={modChange}></button>
         </div>
         )

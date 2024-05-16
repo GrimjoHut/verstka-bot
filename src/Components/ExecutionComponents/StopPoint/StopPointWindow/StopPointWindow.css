@@ -1,26 +1,27 @@
-.windowClosed{
-    width: 15%;
+.stopWindow{
     height: 100vh;
     position: absolute;
     background-image: url("./../../../../Resources/Images/NovikovPhon2.0.jpeg");
 }
-.windowClosed:hover{
+.stopWindow.Closed{
+    width: 15%;
+    transition: width 2s ease;
+    z-index: 1;
+}
+.stopWindow.Opened{
+    width: 100%;
+    transition: width 2s ease;
+    z-index: 2;
+}
+.stopWindow.CLosed:hover{
     width: 20%;
 }
-.windowClosed:hover .buttonWindow {
+.stopWindow:hover .buttonWindow {
     visibility: visible;
 }
 .buttonWindow {
     visibility: hidden;
     position: absolute;
-}
-.windowOpened:hover .buttonWindow {
-    visibility: visible;
-}
-.windowOpened{
-    width: 100%;
-    height: 100vh;
-    z-index: 2;
-    position: absolute;
-    background-image: url("./../../../../Resources/Images/NovikovPhon2.0.jpeg");
+    bottom: 10%;
+    left:50%
 }
