@@ -8,6 +8,7 @@ export interface SinsMock {
     background:string,
     names: [string]
     ID: number,
+    
  }
  
  export const SinsArr: SinsMock[] = [
